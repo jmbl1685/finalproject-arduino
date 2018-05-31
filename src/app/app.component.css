@@ -1,0 +1,36 @@
+.btn-custom{
+  width: 200px;
+  height: 80px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  outline: none;
+  color: white;
+  font-size: 25px;
+  margin: 10px;
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+*{
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+.margin-top-50{
+  margin-top: 50px
+}
+
+.btn-custom:hover{
+  border: 5px solid #000000;
+  cursor: pointer;
+}
+
+.green{
+  background-color: #1EEF29
+}
+
+.red{
+  background-color: #EF1E22
+}
+
+.blue{
+  background-color: #1E41EF
+}
