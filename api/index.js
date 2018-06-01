@@ -25,6 +25,7 @@ io.on('connection', socket => {
     motion.on("motionstart", () => {
       countMovement++
       io.emit('sensor', countMovement)
+      config.SendEmail('Sr. Beto Toro','betocabj@msn.com')
     })
 
     motion.on("motionend", () => {
@@ -59,8 +60,6 @@ io.on('connection', socket => {
   })
 
 })
-
-
 
 server.listen(config.server.port, () => {
   console.log('Server started')

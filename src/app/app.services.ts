@@ -2,11 +2,12 @@ import { Injectable } from '@angular/core'
 import { Socket } from 'ng-socket-io';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observer } from 'rxjs/Observer';
+import { Config } from '../app/config'
 
 @Injectable()
 export class AppService {
 
-  public url: string = "http://localhost:3000/api";
+  public url: string = Config.url + "/api";
 
   constructor(private http: HttpClient, private socket: Socket) { }
 
